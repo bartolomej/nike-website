@@ -1,4 +1,4 @@
-import {parseCatalogWebsite, parseShowcaseWebsite} from './cache–assets';
+import { parseCatalogWebsite, parseShowcaseWebsite } from './parser';
 
 
 test('should parse catalog website', async function () {
