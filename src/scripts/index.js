@@ -23,7 +23,8 @@ const TASKS = [
 })();
 
 async function downloadAll(name, websiteUrl, downloadImages = false) {
-  const dirPath = path.join(__dirname, '..', 'assets');
+  const dirPath = path.join(__dirname, '..', '..', 'data');
+  await mkdir(path.join(dirPath));
   await mkdir(path.join(dirPath, name));
   await mkdir(path.join(dirPath, name, 'images'));
   downloadImages && await mkdir(path.join(dirPath, name, 'meta'));
