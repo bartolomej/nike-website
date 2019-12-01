@@ -26,8 +26,8 @@ async function downloadAll(name, websiteUrl, downloadImages = false) {
   const dirPath = path.join(__dirname, '..', '..', 'data');
   await mkdir(path.join(dirPath));
   await mkdir(path.join(dirPath, name));
-  await mkdir(path.join(dirPath, name, 'images'));
-  downloadImages && await mkdir(path.join(dirPath, name, 'meta'));
+  downloadImages && await mkdir(path.join(dirPath, name, 'images'));
+  await mkdir(path.join(dirPath, name, 'meta'));
   let shoes = await parseCatalogWebsite(websiteUrl);
   for (let i = 0; i < shoes.length; i++) {
     const images = await parseShowcaseWebsite(shoes[i].url);
