@@ -49,7 +49,6 @@ async function mkdir (path) {
   });
 }
 
-
 module.exports = {
   downloadImage,
   getRequest,

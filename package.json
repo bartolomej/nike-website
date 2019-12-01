@@ -16,7 +16,8 @@
     "styled-components": "^4.4.1"
   },
   "scripts": {
-    "cache": "node src/scripts/parser.js",
+    "cache": "node src/scripts/index.js",
+    "cache-with-img": "node src/scripts/index.js cache-images",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
