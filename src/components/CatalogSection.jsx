@@ -33,6 +33,7 @@ export default function ({menShoes, womenShoes}) {
 const Container = styled.div`
   display: flex;
   flex-direction: column;
+  margin-bottom: 10%;
 `;
 
 const Header = styled.div`
@@ -45,6 +46,7 @@ const Header = styled.div`
 const ShoesWrapper = styled.div`
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   width: 60%;
   margin: 0 auto;
@@ -61,6 +63,7 @@ const CategoryBtn = styled.button`
   font-weight: bold;
   cursor: pointer;
   outline: none;
+  background: none;
   &:hover {
     color: palevioletred;
   }

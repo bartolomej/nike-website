@@ -3,16 +3,23 @@ import HeaderBar from "./components/HeaderBar";
 import LandingSection from "./components/LandingSection";
 import ShowcaseSection from "./components/ShowcaseSection";
 import CatalogSection from "./components/CatalogSection";
+import Footer from "./components/Footer";
+import styled from "styled-components";
+import bcgPattern from "./assets/graphics/bcg-pattern.png";
 
 // TODO: display loading animation while fetching shoes
 
 export default function () {
-  const [menShoes, setMenShoes] = useState(null);
-  const [womenShoes, setWomenShoes] = useState(null);
+  const [menShoes, setMenShoes] = useState([]);
+  const [womenShoes, setWomenShoes] = useState([]);
 
   useEffect(() => {
-    get('men', 'catalog.json').then(setMenShoes);
-    get('women', 'catalog.json').then(setWomenShoes);
+    get('men', 'catalog.json')
+      .then(setMenShoes)
+      .catch(e => setMenShoes([]));
+    get('women', 'catalog.json')
+      .then(setWomenShoes)
+      .catch(e => setWomenShoes([]));
   }, []);
 
   if (!menShoes || !womenShoes) {
@@ -20,7 +27,7 @@ export default function () {
   }
 
   return (
-    <div>
+    <Container>
       <HeaderBar/>
       <LandingSection/>
       <ShowcaseSection/>
@@ -28,7 +35,8 @@ export default function () {
         menShoes={menShoes}
         womenShoes={womenShoes}
       />
-    </div>
+      <Footer/>
+    </Container>
   );
 }
 
@@ -38,3 +46,7 @@ async function get (gender, file) {
   const response = await fetch(url);
   return await response.json();
 }
+
+const Container = styled('div')`
+  background: url("${bcgPattern}");
+`;

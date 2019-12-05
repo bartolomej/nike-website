@@ -6,16 +6,7 @@ import styled from "styled-components";
 export default function () {
   return (
     <Header>
-      <HeaderElement>
-        <HeaderLogo src={nikeBadge} alt="Nike logo"/>
-      </HeaderElement>
-      <HeaderElement>
-        <a href="/#">MEN</a>
-        <a href="/#">WOMEN</a>
-      </HeaderElement>
-      <HeaderElement>
-        <a href="/#">SHOPPING CART</a>
-      </HeaderElement>
+      <HeaderLogo src={nikeBadge} alt="Nike logo"/>
     </Header>
   )
 }
@@ -30,29 +21,10 @@ const Header = styled.div`
   flex: 3;
   flex-direction: row;
   margin: 0 20px;
+  align-items: center;
+  justify-content: center;
 `;
 
 const HeaderLogo = styled.img`
-  height: 50px;
-`;
-
-const HeaderElement = styled.div`
-  display: flex;
-  flex: 1;
-  flex-direction: row;
-  align-items: center;
-  a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  &:first-child {
-    justify-content: flex-start;
-  }
-  &:nth-child(2) {
-    justify-content: space-evenly;
-  }
-  &:last-child {
-    justify-content: flex-end;
-  }
+  width: 100px;
 `;
