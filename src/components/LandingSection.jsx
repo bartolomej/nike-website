@@ -13,7 +13,7 @@ export default function ({id, scrollPosition}) {
           <div>
             <Title>Nike</Title>
             <Title>Shoes</Title>
-            <Description>The Nike Air VaporMax Flyknit 3 brings bounce to your step with Max Air cushioning that stretches from heel to toe.</Description>
+            <Description>Our mission is what drives us to do everything possible to expand human potential.</Description>
             <HeaderButton>More</HeaderButton>
           </div>
         </LeftWrapper>
@@ -51,12 +51,15 @@ const LeftWrapper = styled.div`
 const Title = styled('h1')`
   line-height: 1;
   margin: 0;
-  font-size: 80px;
+  font-size: 110px;
   font-weight: 900;
 `;
 
 const Description = styled('p')`
   width: 300px;
+  line-height: 1.5;
+  margin-top: 40px;
+  margin-bottom: 30px;
 `;
 
 const HeaderButton = styled.button`

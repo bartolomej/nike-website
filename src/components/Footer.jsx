@@ -3,6 +3,10 @@ import styled from "styled-components";
 import { ReactComponent as FooterBackgroundPath } from "../assets/graphics/footer-bcg.svg";
 import { ReactComponent as FacebookSvg } from "../assets/icons/awesome-facebook.svg";
 import { ReactComponent as InstagramSvg } from "../assets/icons/awesome-instagram.svg";
+import { ReactComponent as TwitterSvg } from "../assets/icons/awesome-twitter.svg";
+import { ReactComponent as YoutubeSvg } from "../assets/icons/awesome-youtube.svg";
+
+
 
 
 
@@ -12,17 +16,10 @@ export default function ({id, scrollPosition}) {
       <ContentContainer>
         <LeftWrapper>
           <TextSection>
-            <h3>ABOUT NIKE</h3>
+            <h3>MORE</h3>
             <ul>
-              <li>news</li>
-              <li>carriers</li>
-            </ul>
-          </TextSection>
-          <TextSection>
-            <h3>GET HELP</h3>
-            <ul>
-              <li>gift cards</li>
-              <li>support</li>
+              <li><a href="https://www.nike.com/">official website</a></li>
+              <li><a href="https://about.nike.com/">about website</a></li>
             </ul>
           </TextSection>
         </LeftWrapper>
@@ -32,6 +29,12 @@ export default function ({id, scrollPosition}) {
           </IconWrapper>
           <IconWrapper target="_blank" href="https://www.instagram.com/nike/">
             <InstagramIcon/>
+          </IconWrapper>
+          <IconWrapper target="_blank" href="https://twitter.com/nike">
+            <TwitterIcon/>
+          </IconWrapper>
+          <IconWrapper target="_blank" href="https://www.youtube.com/user/nike">
+            <YoutubeIcon/>
           </IconWrapper>
         </RightWrapper>
       </ContentContainer>
@@ -56,7 +59,7 @@ const ContentContainer = styled('div')`
   position: relative;
   z-index: 1;
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 `;
 
 const LeftWrapper = styled('div')`
@@ -72,13 +75,22 @@ const RightWrapper = styled('div')`
 
 const TextSection = styled('div')`
   color: white;
-  margin: 15px;
+  margin: 20px;
   h3 {
+    font-size: 25px;
     text-align: center;
   }
   li {
     font-style: italic;
-    font-size: 12px;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+  a:hover {
+    color: palevioletred;
   }
 `;
 
@@ -91,21 +103,49 @@ const BackgroundSvg = styled(FooterBackgroundPath)`
 `;
 
 const IconWrapper = styled('a')`
-  margin: 10px;
+  margin: 20px;
 `;
 
-const FacebookIcon = styled(FacebookSvg)`
-  width: 30px;
+const IconStyles = `
+  width: 40px;
   transition: all 0.2s ease-in-out;
   &:hover {
     transform: scale(1.2);
   }
 `;
 
+const FacebookIcon = styled(FacebookSvg)`
+  ${IconStyles}
+   &:hover {
+    #awesome-facebook {
+      fill: palevioletred;
+    }
+  }
+`;
+
 const InstagramIcon = styled(InstagramSvg)`
-  width: 30px;
-  transition: all 0.2s ease-in-out;
+  ${IconStyles}
   &:hover {
-    transform: scale(1.2);
+    #awesome-instagram {
+      fill: palevioletred;
+    }
+  }
+`;
+
+const TwitterIcon = styled(TwitterSvg)`
+  ${IconStyles}
+   &:hover {
+    #awesome-twitter {
+      fill: palevioletred;
+    }
+  }
+`;
+
+const YoutubeIcon = styled(YoutubeSvg)`
+  ${IconStyles}
+   &:hover {
+    #awesome-youtube {
+      fill: palevioletred;
+    }
   }
 `;

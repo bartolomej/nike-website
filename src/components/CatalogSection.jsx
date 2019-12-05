@@ -77,6 +77,7 @@ const CategoryBtn = styled.button`
   outline: none;
   transition: all .15s ease-out;
   background: none;
+  padding: 10px;
   font-size: 17px;
   font-weight: ${props => props.selected ? 'bold' : 'unset'};
   border-style: none;

@@ -69,7 +69,7 @@ const ShowcaseBcg = styled(ShowcaseBcgPath)`
   width: 30%;
   z-index: 0;
   left: 10%;
-  transform: scale(1.5);
+  transform: scale(2);
   @media (max-width: 850px) {
     display: none;
   }
@@ -77,10 +77,14 @@ const ShowcaseBcg = styled(ShowcaseBcgPath)`
 
 const Title = styled('h2')`
   color: white;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 1.2;
 `;
 
 const Paragraph = styled('p')`
-  font-size: 13px;
+  font-size: 16px;
   margin: 0;
   color: white;
+  line-height: 1.4;
 `;
