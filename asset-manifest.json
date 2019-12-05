@@ -1,18 +1,20 @@
 {
   "files": {
     "main.css": "/nike-website/static/css/main.e38550de.chunk.css",
-    "main.js": "/nike-website/static/js/main.ea001f8a.chunk.js",
-    "main.js.map": "/nike-website/static/js/main.ea001f8a.chunk.js.map",
+    "main.js": "/nike-website/static/js/main.4fb8cac4.chunk.js",
+    "main.js.map": "/nike-website/static/js/main.4fb8cac4.chunk.js.map",
     "runtime-main.js": "/nike-website/static/js/runtime-main.d29a6b58.js",
     "runtime-main.js.map": "/nike-website/static/js/runtime-main.d29a6b58.js.map",
     "static/js/2.5d584414.chunk.js": "/nike-website/static/js/2.5d584414.chunk.js",
     "static/js/2.5d584414.chunk.js.map": "/nike-website/static/js/2.5d584414.chunk.js.map",
     "index.html": "/nike-website/index.html",
-    "precache-manifest.7ab1dc30ab2e54f15a116dbaf2a5eb47.js": "/nike-website/precache-manifest.7ab1dc30ab2e54f15a116dbaf2a5eb47.js",
+    "precache-manifest.f7258b9e280b8b909495425c4d33ead2.js": "/nike-website/precache-manifest.f7258b9e280b8b909495425c4d33ead2.js",
     "service-worker.js": "/nike-website/service-worker.js",
     "static/css/main.e38550de.chunk.css.map": "/nike-website/static/css/main.e38550de.chunk.css.map",
-    "static/media/awesome-facebook.4c6696df.svg": "/nike-website/static/media/awesome-facebook.4c6696df.svg",
-    "static/media/awesome-instagram.8549c9ed.svg": "/nike-website/static/media/awesome-instagram.8549c9ed.svg",
+    "static/media/awesome-facebook.6aa9b364.svg": "/nike-website/static/media/awesome-facebook.6aa9b364.svg",
+    "static/media/awesome-instagram.c084c7e0.svg": "/nike-website/static/media/awesome-instagram.c084c7e0.svg",
+    "static/media/awesome-twitter.1646fbc1.svg": "/nike-website/static/media/awesome-twitter.1646fbc1.svg",
+    "static/media/awesome-youtube.41a7e7a0.svg": "/nike-website/static/media/awesome-youtube.41a7e7a0.svg",
     "static/media/bcg-pattern.acc526a8.svg": "/nike-website/static/media/bcg-pattern.acc526a8.svg",
     "static/media/footer-bcg.3e44251b.svg": "/nike-website/static/media/footer-bcg.3e44251b.svg",
     "static/media/landing-bcg.f6abe151.svg": "/nike-website/static/media/landing-bcg.f6abe151.svg",
@@ -25,6 +27,6 @@
     "static/js/runtime-main.d29a6b58.js",
     "static/js/2.5d584414.chunk.js",
     "static/css/main.e38550de.chunk.css",
-    "static/js/main.ea001f8a.chunk.js"
+    "static/js/main.4fb8cac4.chunk.js"
   ]
 }
