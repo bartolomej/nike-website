@@ -1,14 +1,13 @@
-import nikeLandingShoes from "../assets/graphics/shoe.svg";
 import React from "react";
 import styled from "styled-components";
-import { ReactComponent as LandingPath } from "../assets/graphics/landing-path.svg";
-import { ReactComponent as landingShoe } from "../assets/graphics/shoe.svg";
+import { ReactComponent as LandingBcgSvg } from "../assets/graphics/landing-bcg.svg";
+import { ReactComponent as LandingShoeSvg } from "../assets/graphics/landing-shoe.svg";
 
 
 
-export default function () {
+export default function ({id, scrollPosition}) {
   return (
-    <Container>
+    <Container id={id}>
       <ContentContainer>
         <LeftWrapper>
           <div>
@@ -19,7 +18,7 @@ export default function () {
           </div>
         </LeftWrapper>
         <RightWrapper>
-          <img src={nikeLandingShoes} alt="Nike shoes" />
+          <NikeShoe factor={scrollPosition} />
         </RightWrapper>
       </ContentContainer>
       <BackgroundSvg/>
@@ -53,6 +52,7 @@ const Title = styled('h1')`
   line-height: 1;
   margin: 0;
   font-size: 80px;
+  font-weight: 900;
 `;
 
 const Description = styled('p')`
@@ -70,6 +70,12 @@ const HeaderButton = styled.button`
   cursor: pointer;
   outline: none;
   background: none;
+  font-size: 12px;
+  transition: all .15s ease-out;
+  &:hover {
+    background: white;
+    color: #68D5B8;
+  }
 `;
 
 const RightWrapper = styled.div`
@@ -77,30 +83,29 @@ const RightWrapper = styled.div`
   flex: 1;
   justify-content: center;
   z-index: 1;
-  img {
-    transform: rotate(-25deg);
-    width: 600px;
-  }
-  @media (max-width: 1400px) {
-    img {
-      width: 500px;
-    }
-  }
-  @media (max-width: 1000px) {
-    img {
-      width: 400px;
-    }
+  @media (max-width: 700px) {
+    display: none;
   }
 `;
 
-const LandingShoe = styled(landingShoe)``;
+const NikeShoe = styled(LandingShoeSvg)`
+  width: 600px;
+ // TODO: improve on scroll animation performance
+ // transform: rotate(${props => `${-props.factor*50}deg`});
+  @media (max-width: 1400px) {
+    width: 500px;
+  }
+  @media (max-width: 1000px) {
+    width: 400px;
+  }
+`;
 
-const BackgroundSvg = styled(LandingPath)`
+const BackgroundSvg = styled(LandingBcgSvg)`
   z-index: 0;
   position: absolute;
   height: 100%;
   width: 100%;
-  top: -20%;
+  top: -30%;
   left: -20%;
   transform: scale(1.5);
 `;

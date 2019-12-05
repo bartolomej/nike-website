@@ -1,4 +1,4 @@
-import nikeBadge from "../assets/graphics/nike-badge.png";
+import {ReactComponent as NikeBadgeSvg} from "../assets/graphics/nike-badge.svg";
 import React from "react";
 import styled from "styled-components";
 
@@ -6,7 +6,7 @@ import styled from "styled-components";
 export default function () {
   return (
     <Header>
-      <HeaderLogo src={nikeBadge} alt="Nike logo"/>
+      <NikeBadge/>
     </Header>
   )
 }
@@ -25,6 +25,6 @@ const Header = styled.div`
   justify-content: center;
 `;
 
-const HeaderLogo = styled.img`
+const NikeBadge = styled(NikeBadgeSvg)`
   width: 100px;
 `;

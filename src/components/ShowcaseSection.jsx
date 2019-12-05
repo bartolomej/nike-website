@@ -4,9 +4,9 @@ import { ReactComponent as RunnerPath } from "../assets/graphics/runner.svg";
 import { ReactComponent as ShowcaseBcgPath } from "../assets/graphics/showcase-bcg.svg";
 
 
-export default function () {
+export default function ({id, scrollPosition}) {
   return (
-    <Container>
+    <Container id={id}>
       <TextWrapper>
         <div>
           <Title>RUN LIKE YOU MEAN IT</Title>
@@ -26,9 +26,10 @@ const Container = styled.div`
   display: flex;
   flex: 2;
   flex-direction: row;
-  margin: 0 10% 20vh 20%;
-  @media (max-width: 800px) {
-    margin: 0;
+  margin: 0 10% 20%;
+  @media (max-width: 850px) {
+    margin: 0 0 20%;
+    flex-direction: column;
   }
 `;
 
@@ -43,6 +44,9 @@ const TextWrapper = styled.div`
     width: 60%;
     margin: 0 auto;
   }
+  @media (max-width: 850px) {
+    margin-bottom: 50px;
+  }
 `;
 
 const ImageWrapper = styled.div`
@@ -54,21 +58,24 @@ const ImageWrapper = styled.div`
 
 const RunnerSvg = styled(RunnerPath)`
   height: 300px;
+  z-index: 1;
   #path502 {
-    fill: #001021;
+    fill: white;
   }
 `;
 
 const ShowcaseBcg = styled(ShowcaseBcgPath)`
   position: absolute;
-  height: 100%;
+  width: 30%;
   z-index: 0;
-  left: 5%;
-  transform: scale(1.3);
+  left: 10%;
+  transform: scale(1.5);
+  @media (max-width: 850px) {
+    display: none;
+  }
 `;
 
 const Title = styled('h2')`
-  margin: 0;
   color: white;
 `;
 

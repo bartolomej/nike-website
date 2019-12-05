@@ -5,9 +5,17 @@ import ShowcaseSection from "./components/ShowcaseSection";
 import CatalogSection from "./components/CatalogSection";
 import Footer from "./components/Footer";
 import styled from "styled-components";
-import bcgPattern from "./assets/graphics/bcg-pattern.png";
+import { ReactComponent as BcgPattern } from "./assets/graphics/bcg-pattern.svg";
 
 // TODO: display loading animation while fetching shoes
+// TODO: svg morphing animation
+/**
+ * https://css-tricks.com/blobs/
+ * https://www.youtube.com/watch?v=LKwXoaFwYFk
+ * https://codepen.io/osublake/pen/vdzjyg
+ * https://cssanimation.rocks/scroll-animations/
+ * https://scotch.io/tutorials/implementing-a-scroll-based-animation-with-javascript
+ */
 
 export default function () {
   const [menShoes, setMenShoes] = useState([]);
@@ -28,6 +36,7 @@ export default function () {
 
   return (
     <Container>
+      <BackgroundPattern/>
       <HeaderBar/>
       <LandingSection/>
       <ShowcaseSection/>
@@ -48,5 +57,14 @@ async function get (gender, file) {
 }
 
 const Container = styled('div')`
-  background: url("${bcgPattern}");
+  position: relative;
+`;
+
+const BackgroundPattern = styled(BcgPattern)`
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1000;
+  background-color: #2d2d2d;
 `;
