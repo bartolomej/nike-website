@@ -21,6 +21,12 @@ export default function () {
   const [menShoes, setMenShoes] = useState([]);
   const [womenShoes, setWomenShoes] = useState([]);
 
+  const [landingScroll, setLandingScroll] = useState(0);
+  const [showcaseScroll, setShowcaseScroll] = useState(0);
+  const [catalogScroll, setCatalogScroll] = useState(0);
+  const [footerScroll, setFooterScroll] = useState(0);
+
+
   useEffect(() => {
     get('men', 'catalog.json')
       .then(setMenShoes)
@@ -28,25 +34,49 @@ export default function () {
     get('women', 'catalog.json')
       .then(setWomenShoes)
       .catch(e => setWomenShoes([]));
+
+    //window.addEventListener('scroll', handleScroll);
   }, []);
 
-  if (!menShoes || !womenShoes) {
-    return <h1>Loading...</h1>;
+  function handleScroll (e) {
+    setLandingScroll(getElementScreenPos('landing'));
+    setShowcaseScroll(getElementScreenPos('showcase'));
+    setCatalogScroll(getElementScreenPos('catalog'));
+    setFooterScroll(getElementScreenPos('footer'));
   }
 
   return (
     <Container>
       <BackgroundPattern/>
       <HeaderBar/>
-      <LandingSection/>
-      <ShowcaseSection/>
+      <LandingSection
+        id="landing"
+        scrollPosition={landingScroll}
+      />
+      <ShowcaseSection
+        id="showcase"
+        scrollPosition={showcaseScroll}
+      />
       <CatalogSection
+        id="catalog"
+        scrollPosition={catalogScroll}
         menShoes={menShoes}
         womenShoes={womenShoes}
       />
-      <Footer/>
+      <Footer
+        id="footer"
+        scrollPosition={footerScroll}
+      />
     </Container>
   );
+}
+
+// calculates element position in viewport (0 - 1)
+function getElementScreenPos (id) {
+  const ele = document.getElementById(id);
+  const pos = ele.getBoundingClientRect().y;
+  const height = ele.clientHeight;
+  return Math.abs(pos) / height;
 }
 
 async function get (gender, file) {

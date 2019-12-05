@@ -2,8 +2,10 @@
   "name": "nike-website",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://bartolomej.github.io/nike-website",
   "dependencies": {
     "cheerio": "^1.0.0-rc.3",
+    "gh-pages": "^2.1.1",
     "jest": "^24.9.0",
     "jimp": "^0.8.5",
     "mkdirp": "^0.5.1",
@@ -16,6 +18,8 @@
     "styled-components": "^4.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "cache": "node src/scripts/index.js",
     "cache-with-img": "node src/scripts/index.js cache-images",
     "start": "react-scripts start",
