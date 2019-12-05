@@ -1,0 +1,145 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+     style="margin:auto;display:block;" width="100%" height="100%" preserveAspectRatio="xMidYMid"
+     viewBox="0 0 1084 100%">
+    <defs>
+        <pattern id="pid-0.4344735749337849" x="0" y="0" width="163.84" height="163.84" patternUnits="userSpaceOnUse">
+            <g transform="scale(0.64)">
+                <g transform="translate(-110.069 110.069)">
+                    <line x1="64.65045605989185" x2="42.69926590337711" y1="37.25455409856714" y2="59.20574425508188"
+                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="64.65045605989185" x2="42.69926590337711" y1="-474.74544590143284"
+                          y2="-452.79425574491813" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="320.65045605989184" x2="298.6992659033771" y1="-474.74544590143284"
+                          y2="-452.79425574491813" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="576.6504560598919" x2="554.6992659033771" y1="-474.74544590143284"
+                          y2="-452.79425574491813" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="64.65045605989185" x2="42.69926590337711" y1="-218.74544590143284"
+                          y2="-196.79425574491813" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="320.65045605989184" x2="298.6992659033771" y1="-218.74544590143284"
+                          y2="-196.79425574491813" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="576.6504560598919" x2="554.6992659033771" y1="-218.74544590143284"
+                          y2="-196.79425574491813" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="64.65045605989185" x2="42.69926590337711" y1="37.25455409856714" y2="59.20574425508188"
+                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="320.65045605989184" x2="298.6992659033771" y1="37.25455409856714" y2="59.20574425508188"
+                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="576.6504560598919" x2="554.6992659033771" y1="37.25455409856714" y2="59.20574425508188"
+                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="150.72384616285396" x2="143.96692782166102" y1="28.959175298069077"
+                          y2="35.716093639262034" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="150.72384616285396" x2="143.96692782166102" y1="-483.04082470193094"
+                          y2="-476.28390636073794" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="406.723846162854" x2="399.966927821661" y1="-483.04082470193094" y2="-476.28390636073794"
+                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="662.723846162854" x2="655.966927821661" y1="-483.04082470193094" y2="-476.28390636073794"
+                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="150.72384616285396" x2="143.96692782166102" y1="-227.04082470193092"
+                          y2="-220.28390636073797" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="406.723846162854" x2="399.966927821661" y1="-227.04082470193092" y2="-220.28390636073797"
+                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="662.723846162854" x2="655.966927821661" y1="-227.04082470193092" y2="-220.28390636073797"
+                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="150.72384616285396" x2="143.96692782166102" y1="28.959175298069077"
+                          y2="35.716093639262034" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="406.723846162854" x2="399.966927821661" y1="28.959175298069077" y2="35.716093639262034"
+                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <line x1="662.723846162854" x2="655.966927821661" y1="28.959175298069077" y2="35.716093639262034"
+                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
+                    <animateTransform attributeName="transform" type="translate" values="0 0;-256 256" keyTimes="0;1"
+                                      repeatCount="indefinite" dur="5s"></animateTransform>
+                </g>
+                <g transform="translate(-220.138 220.138)">
+                    <line x1="28.71888535554777" x2="1.0033210854274728" y1="12.219418016451954" y2="39.93498228657225"
+                          stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="28.71888535554777" x2="1.0033210854274728" y1="-499.780581983548" y2="-472.0650177134278"
+                          stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="284.71888535554774" x2="257.0033210854275" y1="-499.780581983548" y2="-472.0650177134278"
+                          stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="540.7188853555477" x2="513.0033210854275" y1="-499.780581983548" y2="-472.0650177134278"
+                          stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="28.71888535554777" x2="1.0033210854274728" y1="-243.78058198354805"
+                          y2="-216.06501771342775" stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="284.71888535554774" x2="257.0033210854275" y1="-243.78058198354805"
+                          y2="-216.06501771342775" stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="540.7188853555477" x2="513.0033210854275" y1="-243.78058198354805"
+                          y2="-216.06501771342775" stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="28.71888535554777" x2="1.0033210854274728" y1="12.219418016451954" y2="39.93498228657225"
+                          stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="284.71888535554774" x2="257.0033210854275" y1="12.219418016451954" y2="39.93498228657225"
+                          stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="540.7188853555477" x2="513.0033210854275" y1="12.219418016451954" y2="39.93498228657225"
+                          stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="191.55152674898414" x2="180.32652409229632" y1="190.8662965067184" y2="202.09129916340623"
+                          stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="191.55152674898414" x2="180.32652409229632" y1="-321.1337034932816"
+                          y2="-309.90870083659377" stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="447.55152674898414" x2="436.3265240922963" y1="-321.1337034932816"
+                          y2="-309.90870083659377" stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="703.5515267489841" x2="692.3265240922963" y1="-321.1337034932816" y2="-309.90870083659377"
+                          stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="191.55152674898414" x2="180.32652409229632" y1="-65.13370349328159"
+                          y2="-53.908700836593766" stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="447.55152674898414" x2="436.3265240922963" y1="-65.13370349328159"
+                          y2="-53.908700836593766" stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="703.5515267489841" x2="692.3265240922963" y1="-65.13370349328159" y2="-53.908700836593766"
+                          stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="191.55152674898414" x2="180.32652409229632" y1="190.8662965067184" y2="202.09129916340623"
+                          stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="447.55152674898414" x2="436.3265240922963" y1="190.8662965067184" y2="202.09129916340623"
+                          stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <line x1="703.5515267489841" x2="692.3265240922963" y1="190.8662965067184" y2="202.09129916340623"
+                          stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
+                    <animateTransform attributeName="transform" type="translate" values="0 0;-256 256" keyTimes="0;1"
+                                      repeatCount="indefinite" dur="2.5s"></animateTransform>
+                </g>
+                <g transform="translate(-74.2073 74.2073)">
+                    <line x1="263.3019659434364" x2="238.96593799043282" y1="58.1374418935296" y2="82.47346984653316"
+                          stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="263.3019659434364" x2="238.96593799043282" y1="-453.8625581064704"
+                          y2="-429.52653015346687" stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="519.3019659434365" x2="494.96593799043285" y1="-453.8625581064704"
+                          y2="-429.52653015346687" stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="775.3019659434365" x2="750.9659379904328" y1="-453.8625581064704" y2="-429.52653015346687"
+                          stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="263.3019659434364" x2="238.96593799043282" y1="-197.8625581064704"
+                          y2="-173.52653015346684" stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="519.3019659434365" x2="494.96593799043285" y1="-197.8625581064704"
+                          y2="-173.52653015346684" stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="775.3019659434365" x2="750.9659379904328" y1="-197.8625581064704" y2="-173.52653015346684"
+                          stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="263.3019659434364" x2="238.96593799043282" y1="58.1374418935296" y2="82.47346984653316"
+                          stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="519.3019659434365" x2="494.96593799043285" y1="58.1374418935296" y2="82.47346984653316"
+                          stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="775.3019659434365" x2="750.9659379904328" y1="58.1374418935296" y2="82.47346984653316"
+                          stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="7.301965943436414" x2="-17.03406200956718" y1="58.1374418935296" y2="82.47346984653316"
+                          stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="115.07101062231165" x2="83.92695261255345" y1="226.8398410559897" y2="257.9838990657479"
+                          stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="115.07101062231165" x2="83.92695261255345" y1="-285.1601589440103" y2="-254.0161009342521"
+                          stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="371.07101062231163" x2="339.92695261255346" y1="-285.1601589440103"
+                          y2="-254.0161009342521" stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="627.0710106223116" x2="595.9269526125535" y1="-285.1601589440103" y2="-254.0161009342521"
+                          stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="115.07101062231165" x2="83.92695261255345" y1="-29.160158944010306"
+                          y2="1.9838990657478917" stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="371.07101062231163" x2="339.92695261255346" y1="-29.160158944010306"
+                          y2="1.9838990657478917" stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="627.0710106223116" x2="595.9269526125535" y1="-29.160158944010306" y2="1.9838990657478917"
+                          stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="115.07101062231165" x2="83.92695261255345" y1="226.8398410559897" y2="257.9838990657479"
+                          stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="371.07101062231163" x2="339.92695261255346" y1="226.8398410559897" y2="257.9838990657479"
+                          stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <line x1="627.0710106223116" x2="595.9269526125535" y1="226.8398410559897" y2="257.9838990657479"
+                          stroke-width="5" stroke="#a9f0f9" stroke-linecap="round"></line>
+                    <animateTransform attributeName="transform" type="translate" values="0 0;-256 256" keyTimes="0;1"
+                                      repeatCount="indefinite" dur="1.6666666666666665s"></animateTransform>
+                </g>
+            </g>
+        </pattern>
+    </defs>
+    <rect x="0" y="0" width="100%" height="100%" fill="url(#pid-0.4344735749337849)"></rect>
+</svg>
