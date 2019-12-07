@@ -1,32 +1,35 @@
 {
   "files": {
     "main.css": "/nike-website/static/css/main.e38550de.chunk.css",
-    "main.js": "/nike-website/static/js/main.681acece.chunk.js",
-    "main.js.map": "/nike-website/static/js/main.681acece.chunk.js.map",
+    "main.js": "/nike-website/static/js/main.6e8c8e9d.chunk.js",
+    "main.js.map": "/nike-website/static/js/main.6e8c8e9d.chunk.js.map",
     "runtime-main.js": "/nike-website/static/js/runtime-main.d29a6b58.js",
     "runtime-main.js.map": "/nike-website/static/js/runtime-main.d29a6b58.js.map",
-    "static/js/2.5d584414.chunk.js": "/nike-website/static/js/2.5d584414.chunk.js",
-    "static/js/2.5d584414.chunk.js.map": "/nike-website/static/js/2.5d584414.chunk.js.map",
+    "static/css/2.5bc09813.chunk.css": "/nike-website/static/css/2.5bc09813.chunk.css",
+    "static/js/2.3f9cc618.chunk.js": "/nike-website/static/js/2.3f9cc618.chunk.js",
+    "static/js/2.3f9cc618.chunk.js.map": "/nike-website/static/js/2.3f9cc618.chunk.js.map",
     "index.html": "/nike-website/index.html",
-    "precache-manifest.ebe54dd230752e063c910a4009c13a91.js": "/nike-website/precache-manifest.ebe54dd230752e063c910a4009c13a91.js",
+    "precache-manifest.89c618cf8f47f615c0b53e986624e70d.js": "/nike-website/precache-manifest.89c618cf8f47f615c0b53e986624e70d.js",
     "service-worker.js": "/nike-website/service-worker.js",
+    "static/css/2.5bc09813.chunk.css.map": "/nike-website/static/css/2.5bc09813.chunk.css.map",
     "static/css/main.e38550de.chunk.css.map": "/nike-website/static/css/main.e38550de.chunk.css.map",
     "static/media/awesome-facebook.6aa9b364.svg": "/nike-website/static/media/awesome-facebook.6aa9b364.svg",
     "static/media/awesome-instagram.c084c7e0.svg": "/nike-website/static/media/awesome-instagram.c084c7e0.svg",
-    "static/media/awesome-twitter.1646fbc1.svg": "/nike-website/static/media/awesome-twitter.1646fbc1.svg",
+    "static/media/awesome-twitter.4f17294d.svg": "/nike-website/static/media/awesome-twitter.4f17294d.svg",
     "static/media/awesome-youtube.41a7e7a0.svg": "/nike-website/static/media/awesome-youtube.41a7e7a0.svg",
-    "static/media/bcg-pattern.acc526a8.svg": "/nike-website/static/media/bcg-pattern.acc526a8.svg",
-    "static/media/footer-bcg.3e44251b.svg": "/nike-website/static/media/footer-bcg.3e44251b.svg",
-    "static/media/landing-bcg.f6abe151.svg": "/nike-website/static/media/landing-bcg.f6abe151.svg",
-    "static/media/landing-shoe.e7f78ca4.svg": "/nike-website/static/media/landing-shoe.e7f78ca4.svg",
-    "static/media/nike-badge.9d531402.svg": "/nike-website/static/media/nike-badge.9d531402.svg",
+    "static/media/bcg-pattern.6c32bcef.svg": "/nike-website/static/media/bcg-pattern.6c32bcef.svg",
+    "static/media/footer-bcg.487120e7.svg": "/nike-website/static/media/footer-bcg.487120e7.svg",
+    "static/media/landing-bcg.231bd309.svg": "/nike-website/static/media/landing-bcg.231bd309.svg",
+    "static/media/landing-shoe.7f9c9da4.svg": "/nike-website/static/media/landing-shoe.7f9c9da4.svg",
+    "static/media/nike-badge.fbb92bab.svg": "/nike-website/static/media/nike-badge.fbb92bab.svg",
     "static/media/runner.1365123a.svg": "/nike-website/static/media/runner.1365123a.svg",
-    "static/media/showcase-bcg.836a63fd.svg": "/nike-website/static/media/showcase-bcg.836a63fd.svg"
+    "static/media/showcase-bcg.b1b1dabd.svg": "/nike-website/static/media/showcase-bcg.b1b1dabd.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d29a6b58.js",
-    "static/js/2.5d584414.chunk.js",
+    "static/css/2.5bc09813.chunk.css",
+    "static/js/2.3f9cc618.chunk.js",
     "static/css/main.e38550de.chunk.css",
-    "static/js/main.681acece.chunk.js"
+    "static/js/main.6e8c8e9d.chunk.js"
   ]
 }

@@ -4,50 +4,6 @@
     <defs>
         <pattern id="pid-0.4344735749337849" x="0" y="0" width="163.84" height="163.84" patternUnits="userSpaceOnUse">
             <g transform="scale(0.64)">
-                <g transform="translate(-110.069 110.069)">
-                    <line x1="64.65045605989185" x2="42.69926590337711" y1="37.25455409856714" y2="59.20574425508188"
-                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="64.65045605989185" x2="42.69926590337711" y1="-474.74544590143284"
-                          y2="-452.79425574491813" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="320.65045605989184" x2="298.6992659033771" y1="-474.74544590143284"
-                          y2="-452.79425574491813" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="576.6504560598919" x2="554.6992659033771" y1="-474.74544590143284"
-                          y2="-452.79425574491813" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="64.65045605989185" x2="42.69926590337711" y1="-218.74544590143284"
-                          y2="-196.79425574491813" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="320.65045605989184" x2="298.6992659033771" y1="-218.74544590143284"
-                          y2="-196.79425574491813" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="576.6504560598919" x2="554.6992659033771" y1="-218.74544590143284"
-                          y2="-196.79425574491813" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="64.65045605989185" x2="42.69926590337711" y1="37.25455409856714" y2="59.20574425508188"
-                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="320.65045605989184" x2="298.6992659033771" y1="37.25455409856714" y2="59.20574425508188"
-                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="576.6504560598919" x2="554.6992659033771" y1="37.25455409856714" y2="59.20574425508188"
-                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="150.72384616285396" x2="143.96692782166102" y1="28.959175298069077"
-                          y2="35.716093639262034" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="150.72384616285396" x2="143.96692782166102" y1="-483.04082470193094"
-                          y2="-476.28390636073794" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="406.723846162854" x2="399.966927821661" y1="-483.04082470193094" y2="-476.28390636073794"
-                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="662.723846162854" x2="655.966927821661" y1="-483.04082470193094" y2="-476.28390636073794"
-                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="150.72384616285396" x2="143.96692782166102" y1="-227.04082470193092"
-                          y2="-220.28390636073797" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="406.723846162854" x2="399.966927821661" y1="-227.04082470193092" y2="-220.28390636073797"
-                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="662.723846162854" x2="655.966927821661" y1="-227.04082470193092" y2="-220.28390636073797"
-                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="150.72384616285396" x2="143.96692782166102" y1="28.959175298069077"
-                          y2="35.716093639262034" stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="406.723846162854" x2="399.966927821661" y1="28.959175298069077" y2="35.716093639262034"
-                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <line x1="662.723846162854" x2="655.966927821661" y1="28.959175298069077" y2="35.716093639262034"
-                          stroke-width="5" stroke="#01cbe1" stroke-linecap="round"></line>
-                    <animateTransform attributeName="transform" type="translate" values="0 0;-256 256" keyTimes="0;1"
-                                      repeatCount="indefinite" dur="5s"></animateTransform>
-                </g>
                 <g transform="translate(-220.138 220.138)">
                     <line x1="28.71888535554777" x2="1.0033210854274728" y1="12.219418016451954" y2="39.93498228657225"
                           stroke-width="5" stroke="#68d5b8" stroke-linecap="round"></line>
