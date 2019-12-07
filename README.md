@@ -1,8 +1,9 @@
+<img align="center" src="./src/public/favicon.ico" alt="Nike logo"/>
+
+
 # Nike website concept
 
 Nike website concept UI made for school project, build with React.js.
-
-<img src="./src/assets/Landing.svg" alt="Design concept"/>
 
 ## Available Scripts
 
