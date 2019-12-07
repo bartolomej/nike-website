@@ -1,10 +1,10 @@
-<img align="center" src="./src/public/favicon.ico" alt="Nike logo"/>
-
+<img align="center" src="./public/favicon.ico" alt="Nike logo"/>
 
 # Nike website concept
 
-Nike website concept UI made for school project, build with React.js.
-
+Nike website concept developed for school project. <br>
+This project was prototyped with [Adobe XD](https://www.adobe.com/si/products/xd.html) and build with [React.js](https://reactjs.org/).<br>
+Design prototype file: `src/assets/Landing.svg`.
 ## Available Scripts
 
 In the project directory, you can run:
