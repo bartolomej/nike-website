@@ -4,8 +4,11 @@ import { ReactComponent as LandingBcgSvg } from "../assets/graphics/landing-bcg.
 import { ReactComponent as LandingShoeSvg } from "../assets/graphics/landing-shoe.svg";
 
 
-
 export default function ({id, scrollPosition}) {
+  function scrollToShop () {
+    let element = document.querySelector("#catalog");
+    element.scrollIntoView({ behavior: 'smooth', block: 'start'})
+  }
   return (
     <Container id={id}>
       <ContentContainer>
@@ -14,7 +17,7 @@ export default function ({id, scrollPosition}) {
             <Title>Nike</Title>
             <Title>Shoes</Title>
             <Description>Our mission is what drives us to do everything possible to expand human potential.</Description>
-            <HeaderButton>More</HeaderButton>
+            <HeaderButton onClick={scrollToShop}>Shop</HeaderButton>
           </div>
         </LeftWrapper>
         <RightWrapper>
@@ -28,7 +31,10 @@ export default function ({id, scrollPosition}) {
 
 const Container = styled('div')`
   position: relative;
-  margin-bottom: 20%;
+  margin-bottom: 30%;
+  @media (max-width: 400px) {
+    margin-bottom: 100%;
+  }
 `;
 
 const ContentContainer = styled.div`
@@ -37,29 +43,52 @@ const ContentContainer = styled.div`
   height: 100vh;
   align-items: center;
   margin: 0 20px;
+  @media (max-width: 1000px) {
+    flex-direction: column;
+    padding-top: 15%;
+  }
+  @media (max-width: 800px) {
+    padding-top: 30%;
+  }
 `;
 
 const LeftWrapper = styled.div`
+  transform: translateX(-150%);
   display: flex;
   justify-content: center;
   flex: 1;
   margin: 0;
   z-index: 1;
   color: white;
+  animation: 2s cubic-bezier(0.51, 0.01, 0.58, 1) 1s slideTextIn forwards;
+  @keyframes slideTextIn {
+    from {
+      opacity: 0;
+      transform: translateX(-150%) rotate(-30deg);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) rotate(0);
+    }
+  }
 `;
 
 const Title = styled('h1')`
   line-height: 1;
   margin: 0;
-  font-size: 110px;
+  font-size: 90px;
   font-weight: 900;
+  @media (max-width: 800px) {
+    font-size: 80px;
+  }
 `;
 
 const Description = styled('p')`
   width: 300px;
   line-height: 1.5;
-  margin-top: 40px;
+  margin-top: 30px;
   margin-bottom: 30px;
+  font-size: 18px;
 `;
 
 const HeaderButton = styled.button`
@@ -81,34 +110,76 @@ const HeaderButton = styled.button`
   }
 `;
 
-const RightWrapper = styled.div`
+const RightWrapper = styled('div')`
   display: flex;
   flex: 1;
   justify-content: center;
   z-index: 1;
-  @media (max-width: 700px) {
-    display: none;
+  @media (max-width: 800px) {
+    transform: translateY(20%);
+  }
+  @media (max-width: 400px) {
+    transform: translateY(10%);
   }
 `;
 
 const NikeShoe = styled(LandingShoeSvg)`
   width: 600px;
- // TODO: improve on scroll animation performance
- // transform: rotate(${props => `${-props.factor*50}deg`});
-  @media (max-width: 1400px) {
-    width: 500px;
+  opacity: 0;
+  animation: 2s cubic-bezier(0.51, 0.01, 0.58, 1) 1s slideShoeIn forwards;
+  @keyframes slideShoeIn {
+    from {
+      opacity: 0;
+      transform: translateX(150%) rotate(30deg);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0) rotate(0);
+    }
   }
-  @media (max-width: 1000px) {
+  @media (max-width: 800px) {
     width: 400px;
+  }
+  @media (max-width: 400px) {
+    transform: translateY(-20%);
+    width: 300px;
   }
 `;
 
 const BackgroundSvg = styled(LandingBcgSvg)`
   z-index: 0;
+  opacity: 0;
   position: absolute;
   height: 100%;
   width: 100%;
   top: -30%;
   left: -20%;
-  transform: scale(1.5);
+  @media (max-width: 1000px) {
+    top: -50%;
+    left: 0;
+  }
+  @media (max-width: 800px) {
+    transform: scale(2.3);
+  }
+  @media (max-width: 800px) {
+    top: -50%;
+  }
+  @media (max-width: 800px) {
+    top: -60%;
+    width: 200%;
+  }
+  @media (max-width: 400px) {
+    top: -45%;
+  }
+  animation: 2s cubic-bezier(0.51, 0.01, 0.58, 1) 1s slideBcgIn forwards;
+  @keyframes slideBcgIn {
+    from {
+      opacity: 0;
+      transform: translateY(-150%) translateX(-150%) rotate(-30deg);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0) translateX(0) rotate(0) scale(1.5);
+    }
+  }
 `;

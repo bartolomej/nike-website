@@ -7,8 +7,7 @@ import Footer from "./components/Footer";
 import styled from "styled-components";
 import { ReactComponent as BcgPattern } from "./assets/graphics/bcg-pattern.svg";
 
-// TODO: display loading animation while fetching shoes
-// TODO: svg morphing animation
+// TODO: download shoes images for long term support
 /**
  * https://css-tricks.com/blobs/
  * https://www.youtube.com/watch?v=LKwXoaFwYFk
@@ -20,29 +19,23 @@ import { ReactComponent as BcgPattern } from "./assets/graphics/bcg-pattern.svg"
 export default function () {
   const [menShoes, setMenShoes] = useState([]);
   const [womenShoes, setWomenShoes] = useState([]);
+  const [error, setError] = useState(null);
 
   const [landingScroll, setLandingScroll] = useState(0);
-  const [showcaseScroll, setShowcaseScroll] = useState(0);
-  const [catalogScroll, setCatalogScroll] = useState(0);
-  const [footerScroll, setFooterScroll] = useState(0);
-
 
   useEffect(() => {
     get('men', 'catalog.json')
       .then(setMenShoes)
-      .catch(e => setMenShoes([]));
+      .catch(setError);
     get('women', 'catalog.json')
       .then(setWomenShoes)
-      .catch(e => setWomenShoes([]));
+      .catch(setError);
 
-    //window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
   }, []);
 
   function handleScroll (e) {
     setLandingScroll(getElementScreenPos('landing'));
-    setShowcaseScroll(getElementScreenPos('showcase'));
-    setCatalogScroll(getElementScreenPos('catalog'));
-    setFooterScroll(getElementScreenPos('footer'));
   }
 
   return (
@@ -53,20 +46,13 @@ export default function () {
         id="landing"
         scrollPosition={landingScroll}
       />
-      <ShowcaseSection
-        id="showcase"
-        scrollPosition={showcaseScroll}
-      />
+      <ShowcaseSection/>
       <CatalogSection
-        id="catalog"
-        scrollPosition={catalogScroll}
+        error={error}
         menShoes={menShoes}
         womenShoes={womenShoes}
       />
-      <Footer
-        id="footer"
-        scrollPosition={footerScroll}
-      />
+      <Footer />
     </Container>
   );
 }
@@ -88,13 +74,19 @@ async function get (gender, file) {
 
 const Container = styled('div')`
   position: relative;
+  overflow-x: hidden;
 `;
 
 const BackgroundPattern = styled(BcgPattern)`
   position: fixed;
+  opacity: 0;
   top: 0;
   left: 0;
   right: 0;
   z-index: -1000;
-  background-color: #2d2d2d;
+  animation: 2s cubic-bezier(0.51, 0.01, 0.58, 1) 1s fadeBcgIn forwards;
+  @keyframes fadeBcgIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
 `;

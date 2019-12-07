@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://bartolomej.github.io/nike-website",
   "dependencies": {
+    "animate.css": "^3.7.2",
     "cheerio": "^1.0.0-rc.3",
     "gh-pages": "^2.1.1",
     "jest": "^24.9.0",
@@ -12,6 +13,7 @@
     "node-fetch": "^2.6.0",
     "puppeteer": "^2.0.0",
     "react": "^16.12.0",
+    "react-animate-on-scroll": "^2.1.5",
     "react-dom": "^16.12.0",
     "react-scripts": "3.2.0",
     "request": "^2.88.0",
@@ -24,7 +26,7 @@
     "cache-with-img": "node src/scripts/index.js cache-images",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts learn",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

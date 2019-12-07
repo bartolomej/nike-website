@@ -61,10 +61,21 @@ const Container = styled.a`
   margin: 10px;
   width: 230px;
   text-decoration: none;
+  animation: 1s ease-out 0s slideIn;
   &:hover {
     border: 5px solid #68D5B8;
   }
   &:hover ${Image} {
     transform: scale(1.2);
+  }
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 `;

@@ -26,5 +26,17 @@ const Header = styled.div`
 `;
 
 const NikeBadge = styled(NikeBadgeSvg)`
-  width: 100px;
+  width: 90px;
+  opacity: 0;
+  animation: 2s ease-out 1s animate-nike forwards;
+  @keyframes animate-nike {
+    from {
+      opacity: 0;
+      transform: translateY(-40%);
+      }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 `;

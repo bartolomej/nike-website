@@ -1,9 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2448.675 1141.244">
-  <defs>
-    <linearGradient id="linear-gradient" x1="0.5" y1="-0.148" x2="0.5" y2="0.913" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#3093f9"/>
-      <stop offset="1" stop-color="#8cff90"/>
-    </linearGradient>
-  </defs>
-  <path id="footer-bcg" d="M1276.055,5862.221c479.048,214.671,878.6-412.363,1317.8,0s196.354,559.011,69.29,709.59S1342.4,7032.794,657.942,6735.006,797.007,5647.55,1276.055,5862.221Z" transform="translate(-396.846 -5718.304)" fill="url(#linear-gradient)"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1926.23 616.341">
+  <path id="footer-bcg" d="M2548.683,6025.727v423.235l-1926.23.175V6053.519s258.2-220.944,558.57-149.53,570.441-155.031,938.648-35.859S2548.683,6025.727,2548.683,6025.727Z" transform="translate(-622.453 -5832.796)" fill="#369af2"/>
 </svg>

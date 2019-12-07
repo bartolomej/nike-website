@@ -7,10 +7,7 @@ import { ReactComponent as TwitterSvg } from "../assets/icons/awesome-twitter.sv
 import { ReactComponent as YoutubeSvg } from "../assets/icons/awesome-youtube.svg";
 
 
-
-
-
-export default function ({id, scrollPosition}) {
+export default function ({ id, scrollPosition }) {
   return (
     <Container id={id}>
       <ContentContainer>
@@ -45,21 +42,25 @@ export default function ({id, scrollPosition}) {
 
 const Container = styled('div')`
   position: relative;
-  overflow: hidden;
-  height: 60vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
+  overflow: hidden;
 `;
 
 const ContentContainer = styled('div')`
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  align-items: flex-end;
+  align-items: center;
   position: relative;
   z-index: 1;
   width: 100%;
-  margin-bottom: 25px;
+  margin-bottom: -10%;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    justify-content: center;
+  }
 `;
 
 const LeftWrapper = styled('div')`
@@ -78,11 +79,14 @@ const TextSection = styled('div')`
   margin: 20px;
   h3 {
     font-size: 25px;
-    text-align: center;
+    margin: 0;
+  }
+  ul {
+    padding-left: 0;
+    margin: 0;
   }
   li {
-    font-style: italic;
-    font-size: 18px;
+    font-size: 15px;
     text-transform: uppercase;
   }
   a {
@@ -90,20 +94,30 @@ const TextSection = styled('div')`
     color: white;
   }
   a:hover {
-    color: palevioletred;
+    color: #68D5B8;
   }
 `;
 
 const BackgroundSvg = styled(FooterBackgroundPath)`
-  width: 100%;
-  transform: scale(1.8);
+  transform: scale(1) translateY(-300px);
   z-index: 0;
   position: absolute;
-  top: 60%;
+  top: 75%;
+  width: 100%;
+  @media (max-width: 1500px) {
+    width: unset;
+    height: 100%;
+  }
+  @media (max-width: 400px) {
+    top: 10%;
+    transform: scale(1.5);
+  }
 `;
 
 const IconWrapper = styled('a')`
   margin: 20px;
+  display: flex;
+  justify-content: center;
 `;
 
 const IconStyles = `
@@ -116,36 +130,16 @@ const IconStyles = `
 
 const FacebookIcon = styled(FacebookSvg)`
   ${IconStyles}
-   &:hover {
-    #awesome-facebook {
-      fill: palevioletred;
-    }
-  }
 `;
 
 const InstagramIcon = styled(InstagramSvg)`
   ${IconStyles}
-  &:hover {
-    #awesome-instagram {
-      fill: palevioletred;
-    }
-  }
 `;
 
 const TwitterIcon = styled(TwitterSvg)`
   ${IconStyles}
-   &:hover {
-    #awesome-twitter {
-      fill: palevioletred;
-    }
-  }
 `;
 
 const YoutubeIcon = styled(YoutubeSvg)`
   ${IconStyles}
-   &:hover {
-    #awesome-youtube {
-      fill: palevioletred;
-    }
-  }
 `;
