@@ -1,4 +1,6 @@
-<img align="center" src="./public/favicon.ico" alt="Nike logo"/>
+<p align="center">
+    <img src="./src/assets/graphics/landing-shoe.svg" alt="Nike logo"/>
+</p>
 
 # Nike website concept
 
