@@ -68,6 +68,9 @@ const Container = styled.a`
   &:hover ${Image} {
     transform: scale(1.2);
   }
+  @media (max-width: 550px) {
+    width: 100%;
+  }
   @keyframes slideIn {
     0% {
       opacity: 0;

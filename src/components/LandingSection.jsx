@@ -28,6 +28,12 @@ export default function ({id, styles, scrollPosition, onButtonClick}) {
 const Container = styled('div')`
   ${props => props.extraStyles};
   position: relative;
+  @media (max-width: 800px) {
+    margin-bottom: 50%;
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 80%;
+  }
   @media (max-width: 400px) {
     margin-bottom: 100%;
   }
@@ -43,7 +49,7 @@ const ContentContainer = styled.div`
     flex-direction: column;
     padding-top: 15%;
   }
-  @media (max-width: 800px) {
+  @media (max-width: 400px) {
     padding-top: 30%;
   }
 `;
@@ -134,11 +140,10 @@ const NikeShoe = styled(LandingShoeSvg)`
       transform: translateX(0) rotate(0);
     }
   }
-  @media (max-width: 800px) {
-    width: 400px;
-  }
   @media (max-width: 400px) {
     transform: translateY(-20%);
+  }
+  @media (max-width: 600px) {
     width: 300px;
   }
 `;
@@ -157,16 +162,17 @@ const BackgroundSvg = styled(LandingBcgSvg)`
   }
   @media (max-width: 800px) {
     transform: scale(2.3);
+    top: -40%;
   }
-  @media (max-width: 800px) {
-    top: -50%;
+  @media (max-width: 700px) {
+    top: -30%;
   }
-  @media (max-width: 800px) {
-    top: -60%;
-    width: 200%;
+  @media (max-width: 550px) {
+    top: -20%;
+    width: 110%;
   }
   @media (max-width: 400px) {
-    top: -45%;
+    width: 150%;
   }
   animation: 2s cubic-bezier(0.51, 0.01, 0.58, 1) 1s slideBcgIn forwards;
   @keyframes slideBcgIn {

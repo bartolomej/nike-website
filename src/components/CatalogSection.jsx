@@ -111,6 +111,9 @@ const ShoesWrapper = styled.div`
   flex-wrap: wrap;
   width: 60%;
   margin: 0 auto;
+  @media (max-width: 900px) {
+    width: 80%;
+  }
   @media (max-width: 700px) {
     width: 95%;
   }

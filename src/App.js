@@ -94,6 +94,7 @@ const BackgroundPattern = styled(BcgPattern)`
   right: 0;
   z-index: -1000;
   animation: 2s cubic-bezier(0.51, 0.01, 0.58, 1) 1s fadeBcgIn forwards;
+  filter: blur(2px);
   @keyframes fadeBcgIn {
     from { opacity: 0; }
     to { opacity: 1; }
