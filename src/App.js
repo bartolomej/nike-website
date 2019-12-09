@@ -8,6 +8,7 @@ import styled from "styled-components";
 import { ReactComponent as BcgPattern } from "./assets/graphics/bcg-pattern.svg";
 
 // TODO: download shoes images for long term support
+// TODO: adjust footer -> add just top bezier borders
 /**
  * https://css-tricks.com/blobs/
  * https://www.youtube.com/watch?v=LKwXoaFwYFk
@@ -31,12 +32,10 @@ export default function () {
       .then(setWomenShoes)
       .catch(setError);
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', () => {
+      setLandingScroll(getElementScreenPos('landing'));
+    });
   }, []);
-
-  function handleScroll (e) {
-    setLandingScroll(getElementScreenPos('landing'));
-  }
 
   return (
     <Container>
@@ -44,17 +43,27 @@ export default function () {
       <HeaderBar/>
       <LandingSection
         id="landing"
+        styles={`margin-bottom: 30%;`}
+        onButtonClick={scrollToShopSection}
         scrollPosition={landingScroll}
       />
-      <ShowcaseSection/>
+      <ShowcaseSection
+        style={`margin-bottom: 30%;`}
+      />
       <CatalogSection
         error={error}
         menShoes={menShoes}
         womenShoes={womenShoes}
+        style={`margin-bottom: 30%;`}
       />
       <Footer />
     </Container>
   );
+}
+
+function scrollToShopSection () {
+  let element = document.querySelector("#catalog");
+  element.scrollIntoView({ behavior: 'smooth', block: 'start'})
 }
 
 // calculates element position in viewport (0 - 1)

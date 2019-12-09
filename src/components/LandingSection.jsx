@@ -4,24 +4,20 @@ import { ReactComponent as LandingBcgSvg } from "../assets/graphics/landing-bcg.
 import { ReactComponent as LandingShoeSvg } from "../assets/graphics/landing-shoe.svg";
 
 
-export default function ({id, scrollPosition}) {
-  function scrollToShop () {
-    let element = document.querySelector("#catalog");
-    element.scrollIntoView({ behavior: 'smooth', block: 'start'})
-  }
+export default function ({id, styles, scrollPosition, onButtonClick}) {
   return (
-    <Container id={id}>
+    <Container id={id} extraStyles={styles}>
       <ContentContainer>
         <LeftWrapper>
           <div>
             <Title>Nike</Title>
             <Title>Shoes</Title>
             <Description>Our mission is what drives us to do everything possible to expand human potential.</Description>
-            <HeaderButton onClick={scrollToShop}>Shop</HeaderButton>
+            <HeaderButton onClick={onButtonClick}>Shop</HeaderButton>
           </div>
         </LeftWrapper>
-        <RightWrapper>
-          <NikeShoe factor={scrollPosition} />
+        <RightWrapper rotateFactor={Number.parseFloat(scrollPosition)}>
+          <NikeShoe />
         </RightWrapper>
       </ContentContainer>
       <BackgroundSvg/>
@@ -30,8 +26,8 @@ export default function ({id, scrollPosition}) {
 }
 
 const Container = styled('div')`
+  ${props => props.extraStyles};
   position: relative;
-  margin-bottom: 30%;
   @media (max-width: 400px) {
     margin-bottom: 100%;
   }
@@ -115,6 +111,7 @@ const RightWrapper = styled('div')`
   flex: 1;
   justify-content: center;
   z-index: 1;
+  transform: rotate(${props => - props.rotateFactor * 30}deg) translateX(${props => props.rotateFactor * 10}%);
   @media (max-width: 800px) {
     transform: translateY(20%);
   }

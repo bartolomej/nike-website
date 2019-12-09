@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from "styled-components";
-import { ReactComponent as FooterBackgroundPath } from "../assets/graphics/footer-bcg.svg";
+import { ReactComponent as FooterBackgroundTopPath } from "../assets/graphics/showcase-bcg-top.svg";
 import { ReactComponent as FacebookSvg } from "../assets/icons/awesome-facebook.svg";
 import { ReactComponent as InstagramSvg } from "../assets/icons/awesome-instagram.svg";
 import { ReactComponent as TwitterSvg } from "../assets/icons/awesome-twitter.svg";
 import { ReactComponent as YoutubeSvg } from "../assets/icons/awesome-youtube.svg";
 
 
-export default function ({ id, scrollPosition }) {
+export default function ({ id, styles }) {
   return (
-    <Container id={id}>
+    <Container id={id} extraStyles={styles}>
+      <BackgroundCurveTop/>
       <ContentContainer>
         <LeftWrapper>
           <TextSection>
@@ -35,17 +36,18 @@ export default function ({ id, scrollPosition }) {
           </IconWrapper>
         </RightWrapper>
       </ContentContainer>
-      <BackgroundSvg/>
     </Container>
   )
 }
 
 const Container = styled('div')`
+  ${props => props.extraStyles};
   position: relative;
   height: 50vh;
   display: flex;
   justify-content: center;
   overflow: hidden;
+  background-color: #369af2;
 `;
 
 const ContentContainer = styled('div')`
@@ -56,7 +58,6 @@ const ContentContainer = styled('div')`
   position: relative;
   z-index: 1;
   width: 100%;
-  margin-bottom: -10%;
   @media (max-width: 600px) {
     flex-direction: column;
     justify-content: center;
@@ -98,20 +99,10 @@ const TextSection = styled('div')`
   }
 `;
 
-const BackgroundSvg = styled(FooterBackgroundPath)`
-  transform: scale(1) translateY(-300px);
-  z-index: 0;
+const BackgroundCurveTop = styled(FooterBackgroundTopPath)`
   position: absolute;
-  top: 75%;
-  width: 100%;
-  @media (max-width: 1500px) {
-    width: unset;
-    height: 100%;
-  }
-  @media (max-width: 400px) {
-    top: 10%;
-    transform: scale(1.5);
-  }
+  transform: translateY(-100%);
+  z-index: 2;
 `;
 
 const IconWrapper = styled('a')`

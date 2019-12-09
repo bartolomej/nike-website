@@ -1,14 +1,16 @@
 import React from 'react';
 import styled from "styled-components";
 import { ReactComponent as RunnerPath } from "../assets/graphics/runner.svg";
-import { ReactComponent as ShowcaseBcgPath } from "../assets/graphics/showcase-bcg.svg";
+import { ReactComponent as ShowcaseBcgTopPath } from "../assets/graphics/showcase-bcg-top.svg";
+import { ReactComponent as ShowcaseBcgBottomPath } from "../assets/graphics/showcase-bcg-bottom.svg";
 import ScrollAnimation from 'react-animate-on-scroll';
 import "animate.css/animate.min.css";
 
 
-export default function ({id, scrollPosition}) {
+export default function ({id, style}) {
   return (
-    <Container id={id}>
+    <Container id={id} extraStyles={style}>
+      <ShowcaseBcgTop/>
       <TextWrapper>
         <ScrollAnimation animateIn="fadeInUp">
           <Title>JUST DO IT</Title>
@@ -18,23 +20,25 @@ export default function ({id, scrollPosition}) {
       <ImageWrapper>
         <RunnerSvg/>
       </ImageWrapper>
-      <ShowcaseBcg/>
+      <ShowcaseBcgBottom/>
     </Container>
   )
 }
 
 const Container = styled.div`
+  ${props => props.extraStyles};
   position: relative;
   display: flex;
   flex: 2;
   flex-direction: row;
-  margin: 0 0 30%;
+  background-color: #369af2;
+  height: 100vh;
   @media (max-width: 1050px) {
     margin: 0 0 30%;
     flex-direction: column;
   }
   @media (max-width: 700px) {
-    padding: 0 0 40%;
+    margin: 0 0 50%;
   }
 `;
 
@@ -80,42 +84,15 @@ const RunnerSvg = styled(RunnerPath)`
   }
 `;
 
-const ShowcaseBcg = styled(ShowcaseBcgPath)`
+const ShowcaseBcgTop = styled(ShowcaseBcgTopPath)`
   position: absolute;
-  z-index: 0;
-  transform: scaleX(1.1) scaleY(1.2);
-  top: -50%;
-  left: 0;
-  right: 0;
-  @media (max-width: 1400px) {
-    top: -30%;
-  }
-  @media (max-width: 1050px) {
-    top: 15%;
-    transform: scaleY(2) scaleX(1.1);
-  }
-  @media (max-width: 950px) {
-    top: 20%;
-    transform: scaleY(2.5) scaleX(1.1);
-  }
-  @media (max-width: 850px) {
-    top: 30%;
-  }
-  @media (max-width: 750px) {
-    transform: scaleY(3) scaleX(1.1);
-  }
-  @media (max-width: 700px) {
-    top: 25%;
-    transform: scaleY(3.5) scaleX(1.1);
-  }
-  @media (max-width: 550px) {
-    top: 30%;
-    transform: scaleY(4.5) scaleX(1.1);
-  }
-  @media (max-width: 420px) {
-    top: 35%;
-    transform: scaleY(6) scaleX(1.1);
-  }
+  transform: translateY(-99%) scaleX(1);
+`;
+
+const ShowcaseBcgBottom = styled(ShowcaseBcgBottomPath)`
+  position: absolute;
+  bottom: 0;
+  transform: translateY(99%) scaleX(1);
 `;
 
 const Title = styled('h2')`
