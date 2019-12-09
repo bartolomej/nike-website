@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "876f3256bc4116dfd1ced9b194031e09",
+    "revision": "22dcb8753710785379ce1e140654f107",
     "url": "/nike-website/index.html"
   },
   {
-    "revision": "e9ddd796bb025f151cdf",
+    "revision": "8acd9de46274c24d5cac",
     "url": "/nike-website/static/css/2.5bc09813.chunk.css"
   },
   {
-    "revision": "f07a3f4273f83deca5f3",
+    "revision": "209aad11b92e181e8a59",
     "url": "/nike-website/static/css/main.e38550de.chunk.css"
   },
   {
-    "revision": "e9ddd796bb025f151cdf",
-    "url": "/nike-website/static/js/2.b67ef04e.chunk.js"
+    "revision": "8acd9de46274c24d5cac",
+    "url": "/nike-website/static/js/2.aa264151.chunk.js"
   },
   {
-    "revision": "f07a3f4273f83deca5f3",
-    "url": "/nike-website/static/js/main.35cf6841.chunk.js"
+    "revision": "209aad11b92e181e8a59",
+    "url": "/nike-website/static/js/main.6ab6922e.chunk.js"
   },
   {
     "revision": "dffa4957a2b39d79a71f",
@@ -44,10 +44,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nike-website/static/media/bcg-pattern.6c32bcef.svg"
   },
   {
-    "revision": "abb0f60fffacbc45e9750460da252682",
-    "url": "/nike-website/static/media/footer-bcg.abb0f60f.svg"
-  },
-  {
     "revision": "231bd309c9157919f974838ad92f90c8",
     "url": "/nike-website/static/media/landing-bcg.231bd309.svg"
   },
@@ -64,7 +60,11 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nike-website/static/media/runner.1365123a.svg"
   },
   {
-    "revision": "b1b1dabd8725a0cee782c14d4e287902",
-    "url": "/nike-website/static/media/showcase-bcg.b1b1dabd.svg"
+    "revision": "4722e586004706f9a435e559e3de07f5",
+    "url": "/nike-website/static/media/showcase-bcg-bottom.4722e586.svg"
+  },
+  {
+    "revision": "b6c67f861f65d2e39f5d71560bf01f17",
+    "url": "/nike-website/static/media/showcase-bcg-top.b6c67f86.svg"
   }
 ]);
