@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9f51f486a0ca31fb62f4284ad8d96ec2",
+    "revision": "a1a50882695a19eff4b895658e59c594",
     "url": "/nike-website/index.html"
   },
   {
-    "revision": "8acd9de46274c24d5cac",
+    "revision": "27084aab3258c85af993",
     "url": "/nike-website/static/css/2.5bc09813.chunk.css"
   },
   {
-    "revision": "1ab90e8cd2ba8c1b444c",
+    "revision": "707298474f84ef40fc73",
     "url": "/nike-website/static/css/main.e38550de.chunk.css"
   },
   {
-    "revision": "8acd9de46274c24d5cac",
-    "url": "/nike-website/static/js/2.aa264151.chunk.js"
+    "revision": "27084aab3258c85af993",
+    "url": "/nike-website/static/js/2.2b0ed9b1.chunk.js"
   },
   {
-    "revision": "1ab90e8cd2ba8c1b444c",
-    "url": "/nike-website/static/js/main.15075331.chunk.js"
+    "revision": "707298474f84ef40fc73",
+    "url": "/nike-website/static/js/main.553bcb55.chunk.js"
   },
   {
     "revision": "dffa4957a2b39d79a71f",
@@ -36,8 +36,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nike-website/static/media/awesome-twitter.4f17294d.svg"
   },
   {
-    "revision": "41a7e7a01d8aa7b5b3682f4abed9e795",
-    "url": "/nike-website/static/media/awesome-youtube.41a7e7a0.svg"
+    "revision": "7a64b3dd52e81af038738f6eb05c9364",
+    "url": "/nike-website/static/media/awesome-youtube.7a64b3dd.svg"
+  },
+  {
+    "revision": "2a1e2d266ff535cf9982cbb4bc985cbe",
+    "url": "/nike-website/static/media/bcg-pattern-static.2a1e2d26.svg"
   },
   {
     "revision": "6c32bcef9a3cdbac3860251a508d420d",
@@ -60,11 +64,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nike-website/static/media/runner.1365123a.svg"
   },
   {
-    "revision": "4722e586004706f9a435e559e3de07f5",
-    "url": "/nike-website/static/media/showcase-bcg-bottom.4722e586.svg"
-  },
-  {
-    "revision": "b6c67f861f65d2e39f5d71560bf01f17",
-    "url": "/nike-website/static/media/showcase-bcg-top.b6c67f86.svg"
+    "revision": "b0e630dd0e8890409dc834c2f86b4c75",
+    "url": "/nike-website/static/media/showcase-bcg-top.b0e630dd.svg"
   }
 ]);
