@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import "styled-components/macro";
 import { ReactComponent as LandingBcgSvg } from "../assets/graphics/landing-bcg.svg";
 import { ReactComponent as LandingShoeSvg } from "../assets/graphics/landing-shoe.svg";
 
 
-export default function ({id, styles, scrollPosition, onButtonClick}) {
+export default function ({ id, styles, scrollPosition = 0, onButtonClick }) {
   return (
     <Container id={id} extraStyles={styles}>
       <ContentContainer>
@@ -12,31 +13,25 @@ export default function ({id, styles, scrollPosition, onButtonClick}) {
           <div>
             <Title>Nike</Title>
             <Title>Shoes</Title>
-            <Description>Our mission is what drives us to do everything possible to expand human potential.</Description>
+            <Description>Our mission is what drives us to do everything possible to expand human
+              potential.</Description>
             <HeaderButton onClick={onButtonClick}>Shop</HeaderButton>
           </div>
         </LeftWrapper>
-        <RightWrapper rotateFactor={Number.parseFloat(scrollPosition)}>
-          <NikeShoe />
+        <RightWrapper rotateFactor={scrollPosition}>
+          <NikeShoe/>
         </RightWrapper>
       </ContentContainer>
       <BackgroundSvg/>
     </Container>
-  )
+  );
+
+
 }
 
 const Container = styled('div')`
   ${props => props.extraStyles};
   position: relative;
-  @media (max-width: 800px) {
-    margin-bottom: 50%;
-  }
-  @media (max-width: 600px) {
-    margin-bottom: 80%;
-  }
-  @media (max-width: 400px) {
-    margin-bottom: 100%;
-  }
 `;
 
 const ContentContainer = styled.div`
@@ -58,6 +53,7 @@ const LeftWrapper = styled.div`
   transform: translateX(-150%);
   display: flex;
   justify-content: center;
+  align-items: center;
   flex: 1;
   margin: 0;
   z-index: 1;
@@ -117,7 +113,7 @@ const RightWrapper = styled('div')`
   flex: 1;
   justify-content: center;
   z-index: 1;
-  transform: rotate(${props => - props.rotateFactor * 30}deg) translateX(${props => props.rotateFactor * 10}%);
+  transition: 1s ease-in-out;
   @media (max-width: 800px) {
     transform: translateY(20%);
   }
@@ -125,6 +121,18 @@ const RightWrapper = styled('div')`
     transform: translateY(10%);
   }
 `;
+
+
+function getAnimationState (pos) {
+  if (pos < 0.5) {
+    return (`
+      transform: 
+        rotate(${pos * 50}deg) 
+        translateY(${pos * 100}%) 
+        translateX(${pos * 40}%);
+    `)
+  }
+}
 
 const NikeShoe = styled(LandingShoeSvg)`
   width: 600px;
@@ -145,6 +153,7 @@ const NikeShoe = styled(LandingShoeSvg)`
   }
   @media (max-width: 600px) {
     width: 300px;
+    display: none;
   }
 `;
 
@@ -158,21 +167,12 @@ const BackgroundSvg = styled(LandingBcgSvg)`
   left: -20%;
   @media (max-width: 1000px) {
     top: -50%;
-    left: 0;
-  }
-  @media (max-width: 800px) {
-    transform: scale(2.3);
-    top: -40%;
-  }
-  @media (max-width: 700px) {
-    top: -30%;
-  }
-  @media (max-width: 550px) {
-    top: -20%;
-    width: 110%;
+    left: -30%;
+    height: 100%;
+    width: 200%;
   }
   @media (max-width: 400px) {
-    width: 150%;
+    top: -40%;
   }
   animation: 2s cubic-bezier(0.51, 0.01, 0.58, 1) 1s slideBcgIn forwards;
   @keyframes slideBcgIn {

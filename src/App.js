@@ -5,10 +5,13 @@ import ShowcaseSection from "./components/ShowcaseSection";
 import CatalogSection from "./components/CatalogSection";
 import Footer from "./components/Footer";
 import styled from "styled-components";
-import { ReactComponent as BcgPattern } from "./assets/graphics/bcg-pattern.svg";
+import BcgPatternStatic from "./assets/graphics/bcg-pattern-static.svg";
+import {ReactComponent as BcgPattern} from "./assets/graphics/bcg-pattern.svg";
+
 
 // TODO: download shoes images for long term support
 // TODO: adjust footer -> add just top bezier borders
+// TODO: remove shoe scroll animation -> performance issue ?
 /**
  * https://css-tricks.com/blobs/
  * https://www.youtube.com/watch?v=LKwXoaFwYFk
@@ -21,7 +24,6 @@ export default function () {
   const [menShoes, setMenShoes] = useState([]);
   const [womenShoes, setWomenShoes] = useState([]);
   const [error, setError] = useState(null);
-
   const [landingScroll, setLandingScroll] = useState(0);
 
   useEffect(() => {
@@ -39,31 +41,27 @@ export default function () {
 
   return (
     <Container>
-      <BackgroundPattern/>
       <HeaderBar/>
+      <BackgroundPattern/>
       <LandingSection
         id="landing"
-        styles={`margin-bottom: 30%;`}
         onButtonClick={scrollToShopSection}
         scrollPosition={landingScroll}
       />
-      <ShowcaseSection
-        style={`margin-bottom: 30%;`}
-      />
+      <ShowcaseSection/>
       <CatalogSection
         error={error}
         menShoes={menShoes}
         womenShoes={womenShoes}
-        style={`margin-bottom: 30%;`}
       />
-      <Footer />
+      <Footer/>
     </Container>
   );
 }
 
 function scrollToShopSection () {
   let element = document.querySelector("#catalog");
-  element.scrollIntoView({ behavior: 'smooth', block: 'start'})
+  element.scrollIntoView({ behavior: 'smooth', block: 'start' })
 }
 
 // calculates element position in viewport (0 - 1)
@@ -84,7 +82,9 @@ async function get (gender, file) {
 const Container = styled('div')`
   position: relative;
   overflow-x: hidden;
+  //background-image: url("${BcgPatternStatic}");
 `;
+
 
 const BackgroundPattern = styled(BcgPattern)`
   position: fixed;

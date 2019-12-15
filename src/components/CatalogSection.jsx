@@ -81,6 +81,11 @@ const Container = styled.div`
   ${props => props.extraStyles};
   display: flex;
   flex-direction: column;
+  margin-bottom: 20%;
+  @media (max-width: 700px) {
+    width: 90%;
+    margin: 0 auto 50% auto;
+  }
 `;
 
 const Header = styled.div`
@@ -96,6 +101,10 @@ const Title = styled('h2')`
   line-height: 1.2;
   margin: 0 0 50px;
   color: #2d2d2d;
+  @media (max-width: 700px) {
+    margin: 0 0 20px;
+    font-size: 40px;
+  }
 `;
 
 const Loading = styled('p')`
@@ -111,11 +120,11 @@ const ShoesWrapper = styled.div`
   flex-wrap: wrap;
   width: 60%;
   margin: 0 auto;
-  @media (max-width: 900px) {
+  @media (max-width: 1300px) {
     width: 80%;
   }
-  @media (max-width: 700px) {
-    width: 95%;
+  @media (max-width: 400px) {
+    width: 100%;
   }
 `;
 

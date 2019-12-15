@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from "styled-components";
-import { ReactComponent as FooterBackgroundTopPath } from "../assets/graphics/showcase-bcg-top.svg";
+import {
+  ReactComponent as FooterBackgroundTopPath
+} from "../assets/graphics/showcase-bcg-top.svg";
 import { ReactComponent as FacebookSvg } from "../assets/icons/awesome-facebook.svg";
 import { ReactComponent as InstagramSvg } from "../assets/icons/awesome-instagram.svg";
 import { ReactComponent as TwitterSvg } from "../assets/icons/awesome-twitter.svg";
@@ -14,7 +16,6 @@ export default function ({ id, styles }) {
       <ContentContainer>
         <LeftWrapper>
           <TextSection>
-            <h3>MORE</h3>
             <ul>
               <li><a href="https://www.nike.com/">official website</a></li>
               <li><a href="https://about.nike.com/">about website</a></li>
@@ -43,11 +44,13 @@ export default function ({ id, styles }) {
 const Container = styled('div')`
   ${props => props.extraStyles};
   position: relative;
-  height: 50vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
-  overflow: hidden;
   background-color: #369af2;
+  @media (max-width: 600px) {
+    height: 40vh;
+  }
 `;
 
 const ContentContainer = styled('div')`
@@ -78,16 +81,13 @@ const RightWrapper = styled('div')`
 const TextSection = styled('div')`
   color: white;
   margin: 20px;
-  h3 {
-    font-size: 25px;
-    margin: 0;
-  }
   ul {
     padding-left: 0;
     margin: 0;
   }
   li {
-    font-size: 15px;
+    font-size: 20px;
+    font-weight: bold;
     text-transform: uppercase;
   }
   a {
@@ -101,7 +101,7 @@ const TextSection = styled('div')`
 
 const BackgroundCurveTop = styled(FooterBackgroundTopPath)`
   position: absolute;
-  transform: translateY(-100%);
+  transform: translateY(-95%) scale(1);
   z-index: 2;
 `;
 
@@ -116,6 +116,9 @@ const IconStyles = `
   transition: all 0.2s ease-in-out;
   &:hover {
     transform: scale(1.2);
+  }
+  @media (max-width: 700px) {
+    width: 30px;
   }
 `;
 

@@ -1,4 +1,4 @@
-<p align="center">
+<p align="center" width="30%">
     <img src="./src/assets/graphics/landing-shoe.svg" alt="Nike logo"/>
 </p>
 
@@ -6,7 +6,8 @@
 
 Nike website concept developed for school project. <br>
 This project was prototyped with [Adobe XD](https://www.adobe.com/si/products/xd.html) and build with [React.js](https://reactjs.org/).<br>
-Design prototype file: `src/assets/Landing.svg`.
+You can find UI design prototype file at: `src/assets/Landing.svg`.
+
 ## Available Scripts
 
 In the project directory, you can run:
