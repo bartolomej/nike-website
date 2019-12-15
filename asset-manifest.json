@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/nike-website/static/css/main.e38550de.chunk.css",
-    "main.js": "/nike-website/static/js/main.553bcb55.chunk.js",
-    "main.js.map": "/nike-website/static/js/main.553bcb55.chunk.js.map",
+    "main.js": "/nike-website/static/js/main.58bedb1b.chunk.js",
+    "main.js.map": "/nike-website/static/js/main.58bedb1b.chunk.js.map",
     "runtime-main.js": "/nike-website/static/js/runtime-main.d29a6b58.js",
     "runtime-main.js.map": "/nike-website/static/js/runtime-main.d29a6b58.js.map",
     "static/css/2.5bc09813.chunk.css": "/nike-website/static/css/2.5bc09813.chunk.css",
     "static/js/2.2b0ed9b1.chunk.js": "/nike-website/static/js/2.2b0ed9b1.chunk.js",
     "static/js/2.2b0ed9b1.chunk.js.map": "/nike-website/static/js/2.2b0ed9b1.chunk.js.map",
     "index.html": "/nike-website/index.html",
-    "precache-manifest.8e9c2d2ce511dccc5de039f6108a14da.js": "/nike-website/precache-manifest.8e9c2d2ce511dccc5de039f6108a14da.js",
+    "precache-manifest.8d75f8237e6030448d7bd73940a4a429.js": "/nike-website/precache-manifest.8d75f8237e6030448d7bd73940a4a429.js",
     "service-worker.js": "/nike-website/service-worker.js",
     "static/css/2.5bc09813.chunk.css.map": "/nike-website/static/css/2.5bc09813.chunk.css.map",
     "static/css/main.e38550de.chunk.css.map": "/nike-website/static/css/main.e38550de.chunk.css.map",
@@ -30,6 +30,6 @@
     "static/css/2.5bc09813.chunk.css",
     "static/js/2.2b0ed9b1.chunk.js",
     "static/css/main.e38550de.chunk.css",
-    "static/js/main.553bcb55.chunk.js"
+    "static/js/main.58bedb1b.chunk.js"
   ]
 }
